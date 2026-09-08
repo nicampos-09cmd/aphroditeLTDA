@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina — Portfólio Criativo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Partículas de fundo -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Barra de Navegação Interativa -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-brand">
+            <span class="brand-icon">✦</span>
+            <span class="brand-text">Lumina</span>
+        </div>
+
+        <div class="nav-menu-wrapper">
+            <menu class="nav-menu" id="navMenu">
+                <button class="nav-item active" data-target="home" data-index="0">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                    </svg>
+                    <span class="nav-label">Início</span>
+                </button>
+                <button class="nav-item" data-target="about" data-index="1">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                    <span class="nav-label">Sobre</span>
+                </button>
+                <button class="nav-item" data-target="services" data-index="2">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <span class="nav-label">Serviços</span>
+                </button>
+                <button class="nav-item" data-target="portfolio" data-index="3">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                        <polyline points="21 15 16 10 5 21"></polyline>
+                    </svg>
+                    <span class="nav-label">Portfólio</span>
+                </button>
+                <button class="nav-item" data-target="contact" data-index="4">
+                    <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span class="nav-label">Contato</span>
+                </button>
+                <div class="nav-indicator" id="navIndicator"></div>
+            </menu>
+        </div>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <!-- Seção Home -->
+        <section class="section section-home active" id="home">
+            <div class="section-content">
+                <div class="hero">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Disponível para projetos</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Criamos</span>
+                        <span class="title-line highlight">Experiências</span>
+                        <span class="title-line">Digitais</span>
+                    </h1>
+                    <p class="hero-desc">
+                        Design elegante, código limpo e interações memoráveis. 
+                        Transformamos ideias em realidade digital com sofisticação e criatividade.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#portfolio" class="btn btn-primary" data-nav="portfolio">
+                            <span>Ver Portfólio</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-outline" data-nav="contact">
+                            <span>Fale Conosco</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="orbit-container">
+                        <div class="orbit orbit-1"></div>
+                        <div class="orbit orbit-2"></div>
+                        <div class="orbit orbit-3"></div>
+                        <div class="orbit-center">
+                            <span>✦</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span>Role para explorar</span>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section class="section section-about" id="about">
+            <div class="section-content">
+                <div class="about-header">
+                    <span class="section-tag">Sobre Nós</span>
+                    <h2 class="section-title">Paixão por <span class="text-gold">Detalhes</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card" data-reveal>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Design Criativo</h3>
+                        <p>Cada pixel é pensado com propósito. Criamos interfaces que encantam e convertem.</p>
+                    </div>
+                    <div class="about-card featured" data-reveal>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Desenvolvimento</h3>
+                        <p>Código limpo, performático e escalável. Tecnologia de ponta para resultados excepcionais.</p>
+                    </div>
+                    <div class="about-card" data-reveal>
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Experiência do Usuário</h3>
+                        <p>Interfaces intuitivas que guiam o usuário naturalmente até seu objetivo.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item" data-reveal>
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-label">Projetos Entregues</span>
+                    </div>
+                    <div class="stat-item" data-reveal>
+                        <span class="stat-number" data-count="98">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Clientes Satisfeitos</span>
+                    </div>
+                    <div class="stat-item" data-reveal>
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-label">Anos de Experiência</span>
+                    </div>
+                    <div class="stat-item" data-reveal>
+                        <span class="stat-number" data-count="24">0</span>
+                        <span class="stat-label">Prêmios Recebidos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section class="section section-services" id="services">
+            <div class="section-content">
+                <div class="services-header">
+                    <span class="section-tag">O Que Fazemos</span>
+                    <h2 class="section-title">Nossos <span class="text-rose">Serviços</span></h2>
+                </div>
+                <div class="services-list">
+                    <div class="service-item" data-reveal>
+                        <div class="service-number">01</div>
+                        <div class="service-content">
+                            <h3>Web Design</h3>
+                            <p>Sites institucionais, landing pages e e-commerces com design exclusivo e responsivo.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="service-item" data-reveal>
+                        <div class="service-number">02</div>
+                        <div class="service-content">
+                            <h3>Aplicativos Mobile</h3>
+                            <p>Apps nativos e híbridos para iOS e Android com experiência fluida e intuitiva.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="service-item" data-reveal>
+                        <div class="service-number">03</div>
+                        <div class="service-content">
+                            <h3>Identidade Visual</h3>
+                            <p>Logotipos, paletas de cores e diretrizes de marca que comunicam sua essência.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="service-item" data-reveal>
+                        <div class="service-number">04</div>
+                        <div class="service-content">
+                            <h3>Motion Design</h3>
+                            <p>Animações, micro-interações e transições que dão vida às suas interfaces.</p>
+                        </div>
+                        <div class="service-arrow">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section class="section section-portfolio" id="portfolio">
+            <div class="section-content">
+                <div class="portfolio-header">
+                    <span class="section-tag">Trabalhos</span>
+                    <h2 class="section-title">Portfólio <span class="text-gold">Selecionado</span></h2>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-card large" data-reveal>
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #ffc2d1 0%, #ff8fab 100%);">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Web Design</span>
+                                <h3>Bloom E-commerce</h3>
+                                <p>Loja de moda sustentável com experiência de compra imersiva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card" data-reveal>
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #d4af37 0%, #f4e4bc 100%);">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">App Mobile</span>
+                                <h3>Aura Finance</h3>
+                                <p>Gestão financeira pessoal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card" data-reveal>
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #ff6b9d 0%, #ffc2d1 100%);">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Identidade Visual</span>
+                                <h3>Rose Studio</h3>
+                                <p>Rebranding completo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card" data-reveal>
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #f4e4bc 0%, #d4af37 100%);">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Motion</span>
+                                <h3>Luxe Campaign</h3>
+                                <p>Animações para campanha</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-card large" data-reveal>
+                        <div class="portfolio-image" style="background: linear-gradient(135deg, #ff8fab 0%, #ff6b9d 100%);">
+                            <div class="portfolio-overlay">
+                                <span class="portfolio-category">Web Design</span>
+                                <h3>Golden Reserve</h3>
+                                <p>Site institucional de joalheria de luxo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section class="section section-contact" id="contact">
+            <div class="section-content">
+                <div class="contact-layout">
+                    <div class="contact-info">
+                        <span class="section-tag">Vamos Conversar</span>
+                        <h2 class="section-title">Pronto para seu <br><span class="text-rose">próximo projeto?</span></h2>
+                        <p class="contact-desc">Entre em contato e vamos transformar sua visão em realidade. Estamos ansiosos para conhecer sua ideia.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">hello@lumina.studio</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Localização</span>
+                                    <span class="contact-value">São Paulo, Brasil</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-wrapper" data-reveal>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" required placeholder=" ">
+                                <label for="name">Seu Nome</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" required placeholder=" ">
+                                <label for="email">Seu Email</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" required>
+                                    <option value="" disabled selected>Assunto</option>
+                                    <option value="web">Web Design</option>
+                                    <option value="app">Aplicativo Mobile</option>
+                                    <option value="brand">Identidade Visual</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                                <div class="form-line"></div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                                <label for="message">Sua Mensagem</label>
+                                <div class="form-line"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Enviar Mensagem</span>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="brand-icon">✦</span>
+                <span>Lumina Studio</span>
+            </div>
+            <p class="footer-copy">© 2026 Lumina. Todos os direitos reservados.</p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-icon">✓</div>
+        <div class="toast-message">Mensagem enviada com sucesso!</div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
